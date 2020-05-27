@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <p>Chat</p>
+                </div>
+                <div class="card-body">
+                    <textarea class="form-control" style="height: 150px;" id="texte"></textarea>
+                    <br>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Message ></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Votre message" id="message" required>
+                        </div>
+                        <br>
+                        <button id ="button" onCLick ="sendMessage()"style="float:right;float:bottom" type="button" class="btn btn-success"><span class="material-icons">send</span> Envoyer</button>
+                </div>
+            </div>
+        </div>
+    <script src="JS/chatClient.js"></script>
+    </body>
+</html>
