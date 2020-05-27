@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Accueil</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#nourriture">Nourriture</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#sport">Sport</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#sommeil">Sommeil</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              A propos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr/>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4"><span class="material-icons">apps</span>Moniteur d'activités</h1>
+        <p class="lead">Bienvenue sur notre outil de suivi d'activités. Visualisez les statistiques sur vos repas, vos activités sportives ou encore sur votre sommeil.</p>
+      </div>
+    </div>
+    <hr/>
+
+    <!-- Topics -->
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-sm-3">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/sport.jpg" alt="Card image cap">
+        <div class="card-body">
+         <h5 class="card-title"><span class="material-icons">fastfood</span><strong>Nourriture : </strong></h5>
+          <p class="card-text">Suivez vos repas : heure, type, quantité, calories...</p>
+          <a href="#nourriture" class="btn btn-primary">voir plus</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="img/nourriture.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><span class="material-icons">sports</span><strong>Sport : </strong></h5>
+        <p class="card-text">Quelles activités avez-vous pratiquées aujourd'hui ?</p>
+        <a href="#sport" class="btn btn-primary">voir plus</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="img/sommeil.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><span class="material-icons">timeline</span><strong>Sommeil : </strong></h5>
+        <p class="card-text">Dormez-vous assez ? Suivez la qualité de votre sommeil.</p>
+        <a href="#sommeil" class="btn btn-primary">voir plus</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="img/photos.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><span class="material-icons">add_a_photo</span><strong>Blog : </strong></h5>
+        <p class="card-text">Où êtes vous allé ? Suivez votre activité en image !</p>
+        <a href="#blog" class="btn btn-primary">voir plus</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <hr />
+
+    <!-- Food -->
+    <div class="container">
+      <br>
+        <h2>Repas de la journée</h2>
+        <br>
+      <div class="card">
+        <div class="card-header">                   
+          Petit déjeuner
+        </div>
+        <div class="card-body">
+              <li class="list-group-item">Oeufs bacon (25 calories)<span style="float: right;" class="badge badge-pill badge-primary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+              <li class="list-group-item">Jus d'orange (5 calories)<span style="float: right;" class="badge badge-pill badge-primary"><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+              <li class="list-group-item">Tranche de brioche (15 calories)<span style="float: right;" class="badge badge-pill badge-primary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+        </div>
+      </div>
+      <br>
+    
+      <div class="card">
+          <div class="card-header">                   
+            Déjeuner
+          </div>  
+          <div class="card-body">
+              <li class="list-group-item">Carrotes rapés (35 calories)<span style="float: right;" class="badge badge-pill badge-success"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+              <li class="list-group-item">Pizza au chèvre (75 calories)<span style="float: right;" class="badge badge-pill badge-success"><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+              <li class="list-group-item">Pomme (10 calories)<span style="float: right;" class="badge badge-pill badge-success"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+          </div>
+        </div>
+        <br>
+
+      <div class="card">
+          <div class="card-header">                   
+            Dîner
+          </div>  
+          <div class="card-body">
+              <li class="list-group-item">Soupe d'asperges (20 calories)<span style="float: right;" class="badge badge-pill badge-secondary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+              <li class="list-group-item">Croque monsieur (55 calories)<span style="float: right;" class="badge badge-pill badge-secondary"><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+              <li class="list-group-item">Crème au chocolat (45 calories)<span style="float: right;" class="badge badge-pill badge-secondary"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></li>
+          </div>
+        </div>
+      </div>
+    <hr />
+
+    <!-- Sport -->
+    
+    <div class="container">
+      <br>
+      <h2>Sport - performances de la semaine</h2>
+      <br>
+      <div class="card">
+        <div class="card-header">
+          Vélo du 10 mai 2017
+        </div>
+            
+        <div class="card-body">
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Km</th>
+                      <th scope="col">Temps</th>
+                      <th scope="col">Lieu</th>
+                      <th scope="col">Progression</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">0</th>
+                      <td>00:00:00</td>
+                      <td>Brest</td>
+                      <td><i class="material-icons">minimize</i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">13.3</th>
+                      <td>00:50:00</td>
+                      <td>Saint-Renan</td>
+                      <td><i class="material-icons">arrow_downward</i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">20.5</th>
+                      <td>01:20:00</td>
+                      <td>Milizac</td>
+                      <td><i class="material-icons">arrow_upward</i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">32</th>
+                      <td>00:00:00</td>
+                      <td>Brest</td>
+                      <td><i class="material-icons">arrow_upward</i></td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+      </div>
+</div>
+<br>
+<div class="container">
+      <div class="card">
+          <div class="card-header">
+            Footing du 12 janvier 2017
+          </div>
+              
+          <div class="card-body">
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col" width="80px">Km</th>
+                      <th scope="col" width="100px">Temps</th>
+                      <th scope="col" width="220px">Lieu</th>
+                      <th scope="col">Progression</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">0</th>
+                      <td>00:00:00</td>
+                      <td>Océanopolis</td>
+                      <td><i class="material-icons">minimize</i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1.7</th>
+                      <td>00:11:00</td>
+                      <td>Plage du Moulin Blanc</td>
+                      <td><i class="material-icons">arrow_upward</i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4.6</th>
+                      <td>00:29:00</td>
+                      <td>Vallon du Stang Alar</td>
+                      <td><i class="material-icons">arrow_upward</i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7.3</th>
+                      <td>00:44:00</td>
+                      <td>Océanopolis</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+              </table>
+      </div>
+    </div>
+  </div>
+    <hr />
+
+    <!-- Sleep -->
+    <div class="container">
+      <br>
+      <h2>Sommeil - vérifiez votre repos</h2>
+      <br>
+
+      <div class="card">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                    <h2>J-3</h2>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">4h</div>
+                        <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">30m</div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1h</div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">30m</div>
+                        <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1h</div>
+                    </div>
+              </li>
+              <li class="list-group-item">
+                    <h2>J-2</h2>
+                    <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">3h30</div>
+                            <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1h</div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">30m</div>
+                            <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1h</div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">2h30</div>
+                            <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">30m</div>
+                    </div>
+              </li>
+              <li class="list-group-item">
+                    <h2>J-1</h2>
+                    <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">2h</div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">3h</div>
+                            <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">2h</div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">1h</div>
+                    </div>
+              </li>
+          </ul>
+      </div>
+      <br>
+      <button type="button" class="btn btn-primary"></button> Sommeil profond
+      <button type="button" class="btn btn-success"></button> Sommeil léger
+      <button type="button" class="btn btn-danger"></button> Phase de réveil
+  </div>
+
+    <hr />
+
+    <!-- Blog -->
+    <div class="container float-right">
+      <div class="col align-self-end">
+        <br/>
+          <h2>Photos: cliquez pour les voir en grand</h2>
+          <br/>
+        <ul class="list-unstyled ">
+             <li class="media" >
+               <a href="img/nourriture.jpg" target="_blank"><img class="mr-3" src="img/nourriture.jpg" alt="Generic placeholder image" width="200 px"> </a>
+               <div class="media-body">
+                 <h5 class="mt-0 mb-1">Premier repas de la journée</h5>
+                 Petit déjeuner à base de légumes et fruits frais.
+             </div>
+             </li>
+             <hr>
+             <li class="media my-4">
+               <a href="img/sport.jpg" target="_blank"><img class="mr-3" src="img/sport.jpg" alt="Generic placeholder image" width=200 px"></a>
+               <div class="media-body">
+                 <h5 class="mt-0 mb-1">Petit footing du matin</h5>
+                 7km en bord de mer avec un petit vent d'ouest.
+             </div>
+             </li>
+             <hr>
+             <li class="media">
+               <a href="img/sommeil.jpg" target="_blank"><img class="mr-3" src="img/sommeil.jpg" alt="Generic placeholder image" width="200 px"></a>
+               <div class="media-body">
+                 <h5 class="mt-0 mb-1">La journée qui commence</h5>
+                 Réveil à 7h15 de bon pied et en route pour une nouvelle journée bien chargée.
+             </div>
+             </li>
+             <hr>
+             <li class="media">
+               <a href="img/photos.jpg" target="_blank"><img class="mr-3" src="img/photos.jpg" alt="Generic placeholder image" width="200 px"></a>
+                 <div class="media-body">
+                   <h5 class="mt-0 mb-1">Shooting photos</h5>
+                   Pause de midi en campagne pour capturer la nature avec mon appareil.
+                 </div>
+                 </li>
+                 <hr>
+           </ul>
+      </div>
+    <hr />
+
+    <!-- Team -->
+    <div class="container">
+      <br>
+      <h2>L'équipe de développement</h2>
+      <hr>
+      
+      <div class="row">
+        <div class="col-md-4">
+        
+          <img src="img/berners-lee.jpg" class="rounded-circle" alt="Tim Berners-Lee">
+          <h3>Tim Berners-Lee</h3>
+          <h5>Programmeur HTML</h5>
+        </div>
+      
+        <div class="col-md-4">
+            <img src="img/lie.jpg" class="rounded-circle" alt="Håkon Wium Lie">
+            <h3>Håkon Wium Lie</h3>
+            <h5>Programmeur CSS</h5>
+        </div>
+
+        <div class="col-md-4">    
+          <img src="img/eich.jpg" class="rounded-circle" alt="Brendan Eich">
+          <h3>Brendan Eich</h3>
+          <h5>Programmeur JS</h5>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 offset-md-2">
+            <img src="img/lerdorf.jpg" class="rounded-circle" alt="Rasmus Lerdorf">
+            <h3>Rasmus Lerdorf</h3>
+            <h5>Programmeur PHP</h5>
+        </div>
+
+        <div class="col-md-6">
+            <img src="img/chamberlin.jpg" class="rounded-circle" alt="Donald Chamberlin">
+            <h3>Donald Chamberlin</h3>
+            <h5>Programmeur SQL</h5>
+        </div>
+      </div>
+    <hr />
+
+    <!-- Contact -->
+    <div class="container">
+      <br>
+      <h2>Contactez-nous</h2>
+      <hr>
+          <form class="form-group">            
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="material-icons">perm_identity</i></div>
+                  </div>
+                  <input class="form-control" type="text" placeholder="Nom & Prénom">
+              </div>
+              <br>
+
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="material-icons">contact_mail</i></div>
+                  </div>
+                  <input class="form-control" type="text" placeholder="Email">
+              </div>        
+              <br>
+              
+              <div class="form-group">
+                  <label>Message</label>
+                  <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-2">Envoyer</button>
+          </form>
+    </div>
+  </body>
+</html>
